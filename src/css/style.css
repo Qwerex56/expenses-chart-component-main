@@ -1,0 +1,175 @@
+body {
+  background-color: var(--cream);
+
+  font-family: var(--dm-sans);
+}
+
+.expenses-chart {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+
+  max-width: 360px;
+}
+
+@media screen and (min-width: 900px) {
+  .expenses-chart {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .expenses-chart {
+    max-width: 540px;
+  }
+}
+
+.expenses-chart__balance {
+  display: flex;
+
+  padding: 1.25rem;
+  max-width: 100%;
+  border-radius: 0.625rem;
+
+  background-color: var(--soft-red);
+  color: var(--very-pale-orange);
+
+  font-size: 0.9375rem;
+  font-weight: var(--regular-weight);
+}
+
+.expenses-chart__total-balance {
+  margin: 0;
+  margin-right: auto;
+
+  line-height: 2rem;
+}
+
+.expenses-chart__total-balance--money {
+  font-size: 1.5rem;
+  font-weight: var(--bold-weight);
+}
+
+.expenses-chart__logo {
+  justify-self: flex-end;
+
+  width: 60px;
+}
+
+.expenses-chart__spending {
+  margin-top: 1rem;
+  padding: 1.25rem;
+  max-width: 100%;
+  border-radius: 0.625rem;
+
+  background-color: var(--very-pale-orange);
+  color: var(--dark-brown);
+}
+
+.expenses-chart__last-7-days {
+  margin-top: 0;
+
+  font-size: 1.5rem;
+}
+
+.expenses-chart__chart {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 9.5%;
+
+  border-bottom: 2px solid var(--cream);
+}
+
+@media screen and (min-width: 900px) {
+  .expenses-chart__chart {
+    margin-top: 11%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .expenses-chart__chart {
+    margin-top: 13%;
+  }
+}
+
+.expenses-chart__chart-bar-element {
+  display: flex;
+  flex-direction: column;
+  align-content: space-evenly;
+  position: relative;
+  
+  width: 10%;
+}
+
+.expenses-chart__bar {
+  height: 150px;
+  border-radius: 0.1875rem;
+
+  background-color: var(--soft-red);
+}
+.expenses-chart__bar--highest{
+  background-color: var(--cyan);
+}
+.expenses-chart__bar:hover {
+  opacity: 70%;
+}
+
+.expenses-chart__day-of-week {
+  color: var(--medium-brown);
+
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.expenses-chart__price-tag {
+  position: absolute;
+
+  margin: 0;
+  padding: 0.5rem;
+  transform: translate(-50%, -50%);
+  top: -13%;
+  left: 60%;
+  border-radius: 0.3125rem;
+
+  background-color: var(--dark-brown);
+  color: var(--very-pale-orange);
+
+  font-size: 1.125rem;
+  font-weight: var(--bold-weight);
+}
+
+.expenses-chart__month-summary {
+  display: flex;
+}
+
+.expenses-chart__total-spending {
+  margin-right: auto;
+
+  color: var(--medium-brown);
+
+  font-size: 0.9375rem;
+  font-weight: var(--regular-weight);
+}
+.expenses-chart__total-spending--span {
+  color: var(--dark-brown);
+
+  font-size: 1.875rem;
+  font-weight: var(--bold-weight);
+}
+
+.expenses-chart__from-last-month {
+  justify-self: flex-end;
+  align-self: flex-end;
+
+  color: var(--medium-brown);
+
+  font-size: 0.9375rem;
+  font-weight: var(--regular-weight);
+  text-align: end;
+}
+.expenses-chart__from-last-month--span {
+  color: var(--dark-brown);
+
+  font-size: 0.9375rem;
+  font-weight: var(--bold-weight);
+}

@@ -1,0 +1,20 @@
+:root {
+  /* ---COLROS--- */
+  /* --PRIMARY-- */
+  --soft-red: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+  
+  /* --NEUTRAL-- */
+  --dark-brown: hsl(25, 47%, 15%);
+  --medium-brown: hsl(28, 10%, 60%);
+  --cream: hsl(27, 66%, 92%);
+  --very-pale-orange: hsl(33, 100%, 98%);
+
+  /* ---TYPOGRAPHY--- */
+  /* --FONT FAMILY-- */
+  --dm-sans: 'DM Sans', sans-serif;
+
+  /* --FONT WEIGHT */
+  --regular-weight: 400;
+  --bold-weight: 700;
+}
