@@ -6,38 +6,43 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/css/variables.css">
+  <link rel="stylesheet" href="./src/css/style.css">
+
   <title>Frontend Mentor | Expenses chart component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
 <body>
+  <main class="expenses-chart">
+    <div class="expenses-chart__balance">
+      <p class="expenses-chart__total-balance">
+        My balance<br>
+        <span class="expenses-chart__total-balance--money">$921.48</span>
+      </p>
+      <img class="expenses-chart__logo" src="./src/images/logo.svg" alt="">
+    </div>
 
-  My balance
-  $921.48
+    <div class="expenses-chart__spending">
+      <h1 class="expenses-chart__last-7-days">Spending - Last 7 days</h1>
+      <div class="expenses-chart__chart">
 
-  Spending - Last 7 days
+        <div class="expenses-chart__chart-bar-element">
+            <p class="expenses-chart__price-tag">$56.36</p>
+          <div class="expenses-chart__bar"></div>
+          <p class="expenses-chart__day-of-week">
+            mon
+          </p>
+        </div>
 
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      </div>
+      <div class="expenses-chart__month-summary">
+        <p class="expenses-chart__total-spending">Total this month <br><span class="expenses-chart__total-spending--span">$478.33</span></p>
+        <p class="expenses-chart__from-last-month"><span class="expenses-chart__from-last-month--span">+2.4%</span><br>from last month</p>
+      </div>
+    </div>
+  </main>
+  <script src="./src/js/script.js"></script>
 </body>
 </html>
