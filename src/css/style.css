@@ -93,10 +93,11 @@ body {
 }
 
 .expenses-chart__chart-bar-element {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-content: space-evenly;
-  position: relative;
+  justify-content: end;
   
   width: 10%;
 }
@@ -125,17 +126,20 @@ body {
   position: absolute;
 
   margin: 0;
-  padding: 0.5rem;
+  padding: 0.4rem;
   transform: translate(-50%, -50%);
-  top: -13%;
+  top: calc(0% - 26px);
   left: 60%;
   border-radius: 0.3125rem;
 
   background-color: var(--dark-brown);
   color: var(--very-pale-orange);
+  opacity: 100%;
 
   font-size: 1.125rem;
   font-weight: var(--bold-weight);
+
+  z-index: 1;
 }
 
 .expenses-chart__month-summary {
