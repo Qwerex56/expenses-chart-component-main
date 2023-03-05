@@ -58,12 +58,23 @@ const main = async () => {
     }
 
     CHART_ELEMENT.addEventListener('click', (ev) => {
+      if (window.innerWidth < 1440) {
+        return;
+      }
       let price_tag = ev.target.parentElement.querySelector('.expenses-chart__price-tag');
       if (price_tag.style.visibility === 'visible') {
         price_tag.style.visibility = 'hidden';
       }
       else {
         price_tag.style.visibility = 'visible';
+      }
+    })
+    window.addEventListener("resize", (ev) => {
+      let price_tag = CHART_ELEMENT.querySelectorAll('.expenses-chart__price-tag');
+      if (window.innerWidth < 1440) {
+        price_tag.forEach(element => {
+          element.style.visibility = 'hidden';
+        });
       }
     })
   }
