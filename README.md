@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/profile/Qwerex56)
+- Solution URL: [All Frontend mentor solutions](https://www.frontendmentor.io/profile/Qwerex56)
 - Live Site URL: [Github Pages](https://qwerex56.github.io/expenses-chart-component-main/)
 
 ### Built with
